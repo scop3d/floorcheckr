@@ -58,4 +58,4 @@ curl -X POST https://us-central1-<PROJECT>.cloudfunctions.net/test -d '{"symbol"
 ```
 
 Example Output:
-![img]("floorcheckr.png")
+![img](floorcheckr.png)
