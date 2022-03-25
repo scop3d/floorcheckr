@@ -10,10 +10,11 @@ Assumptions
 - [Authenticated](https://cloud.google.com/sdk/gcloud/reference/auth/login) into GCP Console (`gcloud auth login`)
 
 1. Clone Repo
-2. Create [Python Virtual Env](https://docs.python.org/3/library/venv.html)
+2. Create and enable [Python Virtual Env](https://docs.python.org/3/library/venv.html)
 
 ```
 python3 -m venv MY-ENV-NAME
+source MY-ENV-NAME/bin/activate
 ```
 3. Install Packages
 
