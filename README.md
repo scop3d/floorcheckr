@@ -38,7 +38,7 @@ gcloud functions deploy MY-CLOUD-FUNCTION-NAME
 
 symbol: Symbol of your NFT project (can be found using MagicEden's All Collections API endpoint or the last part of the URL when navigating to the page on ME website.
 
-eg. https://magiceden.io/marketplace/**the_remnants_** (symbol="the_remnants_") 
+eg. https://magiceden.io/marketplace/the_remnants_ (symbol for this link is "the_remnants_") 
 
 webhook_url: Learn more on [Discord's website](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 
