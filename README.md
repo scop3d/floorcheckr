@@ -43,7 +43,7 @@ eg. https://magiceden.io/marketplace/the_remnants_ (symbol for this link is "the
 
 **webhook_url:** Learn more on [Discord's website](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 
-Example payload:
+## Example payload:
 
 ```
 {
@@ -52,10 +52,23 @@ Example payload:
 }
 ```
 
-Example Request:
+## Example Request:
 
 ```
 curl -X POST https://us-central1-<PROJECT>.cloudfunctions.net/test -d '{"symbol":"the_remnants_", "webhook_url": "https://discord.com/api/webhooks/12345/abcd"}'
+```
+
+## Post Request Example
+```
+import requests 
+def floorcheckr_public(symbol: str, webhook_url: str):
+    data = {"symbol": symbol, 
+            "webhook_url": webhook_url}
+
+    url = "https://us-central1-serverless-344401.cloudfunctions.net/floorcheckr"
+    return (requests.post(url, json=data).json())
+
+floorcheckr_public(symbol="bohemia_", webhook_url="MY-DISCORD-SERVER-WEBHOOK-URL")
 ```
 
 Example Output:
